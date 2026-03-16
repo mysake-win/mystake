@@ -16,7 +16,10 @@ const linksContainer = document.getElementById("links");
 
 const socialsContainer = document.getElementById("socials");
 
-/* liens */
+const videosContainer = document.getElementById("videos");
+
+
+/* LINKS */
 
 data.links.forEach(link => {
 
@@ -25,6 +28,8 @@ const a = document.createElement("a");
 a.href = link.url;
 
 a.target = "_blank";
+
+a.rel = "noopener noreferrer";
 
 a.className = "link";
 
@@ -48,7 +53,8 @@ linksContainer.appendChild(a);
 
 });
 
-/* réseaux */
+
+/* SOCIALS */
 
 data.socials.forEach(social => {
 
@@ -65,6 +71,35 @@ icon.className = social.icon;
 a.appendChild(icon);
 
 socialsContainer.appendChild(a);
+
+});
+
+
+/* VIDEOS */
+
+data.videos.forEach(video => {
+
+const div = document.createElement("div");
+
+div.className = "video";
+
+const vid = document.createElement("video");
+
+vid.src = video.file;
+
+vid.controls = true;
+
+vid.playsInline = true;
+
+const text = document.createElement("p");
+
+text.textContent = video.text;
+
+div.appendChild(vid);
+
+div.appendChild(text);
+
+videosContainer.appendChild(div);
 
 });
 

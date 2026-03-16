@@ -1,19 +1,30 @@
 {
   "name": "Mystake",
-  "bio": " Vous êtes remboursé de votre premier dépôt",
+  "bio": "Vous êtes remboursé de votre premier dépôt",
   "description": "Merci pour votre visite",
   "avatar": "assets/profile.jpg",
 
   "links": [
     {
-      "title": "MYSTAKE - Inscrivez-vous et recevez votre bonus jusqu'à 1000€ 🤑💵",
+      "title": "MYSTAKE - Inscrivez-vous et recevez votre bonus jusqu'à 1000€",
       "url": "https://tinyurl.com/4eu6hz8b",
       "icon": "assets/web1.jpg"
     },
     {
-      "title": "MYSTAKE - Jouez au jeu du poulet 🍗🍗 Bonus jusqu'à 1000€ 🤑💵",
+      "title": "MYSTAKE - Jouez au jeu du poulet Bonus jusqu'à 1000€",
       "url": "https://tinyurl.com/y5u2svkm",
       "icon": "assets/web2.jpg"
+    }
+  ],
+
+  "videos":[
+    {
+      "file":"assets/video1.mp4",
+      "text":"Présentation complète de Mystake"
+    },
+    {
+      "file":"assets/video2.mp4",
+      "text":"Gameplay du Chicken Game"
     }
   ],
 
