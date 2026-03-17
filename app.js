@@ -8,14 +8,10 @@ document.getElementById("avatar").src = data.avatar;
 
 document.getElementById("name").textContent = data.name;
 
-document.getElementById("bio").textContent = data.bio;
-
 document.getElementById("desc").textContent = data.description;
 
 const linksContainer = document.getElementById("links");
-
 const socialsContainer = document.getElementById("socials");
-
 const videosContainer = document.getElementById("videos");
 
 
@@ -54,27 +50,6 @@ linksContainer.appendChild(a);
 });
 
 
-/* SOCIALS */
-
-data.socials.forEach(social => {
-
-const a = document.createElement("a");
-
-a.href = social.url;
-
-a.target = "_blank";
-
-const icon = document.createElement("i");
-
-icon.className = social.icon;
-
-a.appendChild(icon);
-
-socialsContainer.appendChild(a);
-
-});
-
-
 /* VIDEOS */
 
 data.videos.forEach(video => {
@@ -96,10 +71,30 @@ const text = document.createElement("p");
 text.textContent = video.text;
 
 div.appendChild(vid);
-
 div.appendChild(text);
 
 videosContainer.appendChild(div);
+
+});
+
+
+/* SOCIALS */
+
+data.socials.forEach(social => {
+
+const a = document.createElement("a");
+
+a.href = social.url;
+
+a.target = "_blank";
+
+const icon = document.createElement("i");
+
+icon.className = social.icon;
+
+a.appendChild(icon);
+
+socialsContainer.appendChild(a);
 
 });
 
